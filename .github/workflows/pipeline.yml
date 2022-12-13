@@ -38,3 +38,12 @@ jobs:
       with:
         name: Package
         path: build/libs
+        
+   #ejecucion pipeline Az Devops  
+    - name: azPipelinesRun
+      uses: Azure/pipelines@v1.2
+      with:
+        azure-devops-project-url: 'https://dev.azure.com/clagos353/DevOps-Foundation-v3'
+        azure-pipeline-name: 'proyecto-java'
+        azure-pipeline-variables: '{"variable1": "hola", "variable2": "mundo"}'
+        azure-devops-token: '${{ secrets.AZURE_DEVOPS_TOKEN }}'
