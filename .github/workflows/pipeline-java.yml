@@ -60,4 +60,4 @@ jobs:
    
    - name: Deploy to Minikube
      run: |
-       kubectl apply -f development.yml
+       kubectl apply -f deployment.yml
