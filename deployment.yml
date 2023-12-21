@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: pet-clinic
-        image: clagosu/pet-clinic:latest
+        image: xamaztian/pet-clinic:latest
         ports:
         - containerPort: 8085
