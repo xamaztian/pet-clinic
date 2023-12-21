@@ -40,7 +40,7 @@ jobs:
         chmod 777 *.jar
         ls -lt
 
-   - name: Docker Build
+   - name: Docker Build 
      run: |
         docker build --tag xamaztian/pet-clinic:latest .
         docker images
@@ -56,7 +56,7 @@ jobs:
   needs: build
   steps:
    
-   - uses: actions/checkout@v2
+   - uses: actions/checkout@v3
    
    - name: Deploy to Minikube
      run: |
