@@ -19,7 +19,9 @@ jobs:
    # Runs a set of commands using the runners shell
    - name: Build
      run: |
-       echo "Building"
+      chmod +x gradlew 
+      ./gradlew build 
+      ls -ltr
 
    - name: SonarCloud Analysis
      run: |
