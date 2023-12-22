@@ -62,6 +62,6 @@ jobs:
      run: |
        kubectl apply -f deployment.yml
   
-   - name: Port Forwarding
-     run: |
-       kubectl port-forward service/pet-clinic 8085:8085
+   #- name: Port Forwarding
+    # run: |
+     #  kubectl port-forward service/pet-clinic 8085:8085
